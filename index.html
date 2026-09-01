@@ -3,247 +3,351 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Currículo profissional de Thauane Soares Vargas, estudante de Engenharia de Software e Auxiliar de Escritório." />
-  <title>Thauane Soares Vargas | Currículo</title>
+  <meta name="description" content="Currículo profissional de Thauane Soares Vargas — Auxiliar de Escritório e estudante de Engenharia de Software." />
+  <meta name="theme-color" content="#17151c" />
+  <title>Thauane Soares Vargas — Currículo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#inicio">TSV</a>
-      <nav aria-label="Navegação principal">
-        <a href="#sobre">Sobre</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a href="#inicio" class="monogram" aria-label="Ir para o início">TS</a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#perfil">Perfil</a>
         <a href="#experiencia">Experiência</a>
         <a href="#projetos">Projetos</a>
         <a href="#formacao">Formação</a>
-        <a href="#contato">Contato</a>
       </nav>
+
+      <button class="print-button" type="button" onclick="window.print()" aria-label="Imprimir ou salvar currículo em PDF">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z" />
+        </svg>
+        Salvar PDF
+      </button>
     </div>
   </header>
 
   <main>
     <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="eyebrow">Engenharia de Software • 7º período</span>
-          <h1>Thauane Soares Vargas</h1>
-          <p class="hero-role">Auxiliar de Escritório &amp; Desenvolvedora de Software em formação</p>
-          <p class="hero-text">
-            Profissional com experiência em rotinas administrativas, atendimento ao público,
-            faturamento, estoque e operação de caixa, atualmente ampliando sua atuação para a
-            área de tecnologia por meio da graduação em Engenharia de Software e do desenvolvimento
-            de projetos web e mobile.
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="availability"><span></span> Aberta a oportunidades em tecnologia</div>
+
+          <p class="overline">Currículo profissional</p>
+          <h1>Thauane<br /><span>Soares Vargas</span></h1>
+
+          <p class="headline-role">
+            Auxiliar de Escritório <span>•</span> Estudante de Engenharia de Software
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projetos">Ver projetos</a>
-            <a class="button secondary" href="mailto:Thauanevargas160@gmail.com">Entrar em contato</a>
-          </div>
-          <div class="quick-links">
-            <a href="https://github.com/ThauaneVargas" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="mailto:Thauanevargas160@gmail.com">E-mail ↗</a>
+
+          <p class="hero-summary">
+            Experiência prática em rotinas administrativas, atendimento e organização de processos,
+            aliada à formação em Engenharia de Software e ao desenvolvimento de aplicações web,
+            mobile e backend.
+          </p>
+
+          <div class="hero-links">
+            <a class="cta cta-primary" href="#projetos">
+              Conhecer projetos
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="cta cta-ghost" href="mailto:Thauanevargas160@gmail.com">Enviar e-mail</a>
           </div>
         </div>
 
-        <div class="profile-card" aria-label="Foto e resumo profissional">
-          <img src="https://avatars.githubusercontent.com/u/162236449?v=4" alt="Foto de perfil de Thauane Soares Vargas" />
-          <div class="profile-card-body">
-            <span class="status-dot"></span>
-            <span>Construindo experiência em tecnologia</span>
+        <aside class="identity-card" aria-label="Informações rápidas">
+          <div class="portrait-wrap">
+            <img src="https://avatars.githubusercontent.com/u/162236449?v=4" alt="Thauane Soares Vargas" />
+            <div class="portrait-badge">7º período</div>
           </div>
+
+          <div class="identity-content">
+            <p class="identity-label">Área de interesse</p>
+            <h2>Desenvolvimento de Software</h2>
+
+            <div class="identity-row">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 8l8 5 8-5" /></svg>
+              </div>
+              <div>
+                <span>E-mail</span>
+                <a href="mailto:Thauanevargas160@gmail.com">Thauanevargas160@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="identity-row">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 6.99c.85 0 1.71.11 2.51.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2z" /></svg>
+              </div>
+              <div>
+                <span>GitHub</span>
+                <a href="https://github.com/ThauaneVargas" target="_blank" rel="noreferrer">github.com/ThauaneVargas</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="profile-strip" id="perfil">
+      <div class="shell profile-grid">
+        <div class="section-heading">
+          <p class="overline">01 / Perfil</p>
+          <h2>Experiência que soma<br />com tecnologia.</h2>
+        </div>
+
+        <div class="profile-text">
+          <p class="lead">
+            Minha trajetória profissional une experiência administrativa com uma formação cada vez
+            mais prática em desenvolvimento de software.
+          </p>
+          <p>
+            No trabalho, atuo com atendimento ao público, caixa, laudos, exames de MAPA e Holter 24h,
+            estoque, faturamento e marcação. Essa rotina fortaleceu competências como organização,
+            atenção aos detalhes, responsabilidade com informações e comunicação.
+          </p>
+          <p>
+            Na área de tecnologia, desenvolvo projetos acadêmicos e pessoais que envolvem interfaces,
+            aplicações web e mobile, APIs, banco de dados e integração entre diferentes partes de um sistema.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="sobre">
-      <div class="container two-column">
-        <div>
-          <span class="section-kicker">Perfil</span>
-          <h2>Sobre mim</h2>
-        </div>
-        <div class="section-copy">
-          <p>
-            Tenho experiência profissional em atividades administrativas e de atendimento,
-            lidando diariamente com organização, precisão de informações, contato com o público
-            e suporte a diferentes processos do setor.
-          </p>
-          <p>
-            Paralelamente, estudo Engenharia de Software e desenvolvo projetos que envolvem
-            aplicações web, mobile, interfaces, APIs e banco de dados. Busco oportunidades em que
-            eu possa continuar evoluindo tecnicamente, aplicar o que venho aprendendo e contribuir
-            com responsabilidade, organização e vontade de aprender.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="experiencia">
-      <div class="container">
-        <span class="section-kicker">Trajetória</span>
-        <h2>Experiência profissional</h2>
-
-        <article class="timeline-card featured">
-          <div class="timeline-meta">
-            <span>Atual</span>
-            <strong>Fundação Educacional Severino Sombra (FUSVE)</strong>
+    <section class="section experience-section" id="experiencia">
+      <div class="shell">
+        <div class="section-title-row">
+          <div>
+            <p class="overline">02 / Experiência</p>
+            <h2>Experiência profissional</h2>
           </div>
-          <div class="timeline-content">
+          <p class="section-note">Rotinas administrativas, atendimento e operação.</p>
+        </div>
+
+        <article class="experience-card current-job">
+          <div class="experience-side">
+            <span class="current-pill">Atual</span>
+            <p>Fundação Educacional<br />Severino Sombra — FUSVE</p>
+          </div>
+
+          <div class="experience-main">
             <h3>Auxiliar de Escritório</h3>
-            <p>Atuação em rotinas administrativas e atendimento ao público, com responsabilidades em:</p>
-            <ul>
-              <li>Operação de caixa e controle de recebimentos;</li>
-              <li>Digitação, organização e apoio na emissão de laudos;</li>
-              <li>Rotinas relacionadas aos exames de MAPA e Holter 24 horas;</li>
-              <li>Controle, organização e acompanhamento de estoque;</li>
-              <li>Faturamento e conferência de procedimentos;</li>
-              <li>Marcação e organização de atendimentos e exames;</li>
-              <li>Atendimento presencial e suporte ao público;</li>
-              <li>Organização de documentos e apoio às atividades diárias do setor.</li>
-            </ul>
+            <p class="experience-intro">
+              Atuação multifuncional em rotinas administrativas e suporte ao atendimento.
+            </p>
+
+            <div class="responsibility-grid">
+              <div class="responsibility"><span>01</span><p>Operação de caixa e controle de recebimentos</p></div>
+              <div class="responsibility"><span>02</span><p>Digitação, organização e apoio em laudos</p></div>
+              <div class="responsibility"><span>03</span><p>Rotinas de MAPA e Holter 24 horas</p></div>
+              <div class="responsibility"><span>04</span><p>Controle e organização de estoque</p></div>
+              <div class="responsibility"><span>05</span><p>Faturamento e conferência de procedimentos</p></div>
+              <div class="responsibility"><span>06</span><p>Marcação de atendimentos e exames</p></div>
+              <div class="responsibility"><span>07</span><p>Atendimento presencial ao público</p></div>
+              <div class="responsibility"><span>08</span><p>Organização de documentos e apoio ao setor</p></div>
+            </div>
           </div>
         </article>
 
-        <article class="timeline-card">
-          <div class="timeline-meta">
-            <span>2015 — 2018</span>
-            <strong>Experiência anterior</strong>
+        <article class="experience-card previous-job">
+          <div class="experience-side">
+            <span class="date-pill">2015 — 2018</span>
+            <p>Experiência anterior</p>
           </div>
-          <div class="timeline-content">
+          <div class="experience-main">
             <h3>Cuidadora</h3>
             <p>
-              Experiência no cuidado e acompanhamento de criança com deficiência, desenvolvendo
-              responsabilidade, atenção, paciência e organização da rotina.
+              Acompanhamento e cuidado de criança com deficiência, atividade que exigia atenção,
+              responsabilidade, paciência, confiança e organização da rotina diária.
             </p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section" id="projetos">
-      <div class="container">
-        <span class="section-kicker">Tecnologia</span>
-        <h2>Projetos em destaque</h2>
-        <p class="section-intro">
-          Projetos que representam minha evolução prática em desenvolvimento de software.
-        </p>
+    <section class="section projects-section" id="projetos">
+      <div class="shell">
+        <div class="section-title-row">
+          <div>
+            <p class="overline">03 / Projetos</p>
+            <h2>Projetos em destaque</h2>
+          </div>
+          <p class="section-note">Aplicações que demonstram minha evolução técnica.</p>
+        </div>
 
-        <div class="projects-grid">
-          <article class="project-card project-main">
-            <div class="project-number">01</div>
-            <div class="project-content">
-              <span class="project-label">Mobile • Web • Backend</span>
-              <h3>Navora</h3>
-              <p>
-                Sistema de navegação hospitalar inteligente desenvolvido como projeto acadêmico,
-                com aplicativo mobile para pacientes e visitantes, painel web administrativo,
-                backend e estrutura de dados para navegação e controle operacional.
-              </p>
-              <div class="tags">
-                <span>React Native</span>
-                <span>Expo</span>
-                <span>NestJS</span>
-                <span>TypeScript</span>
-                <span>Prisma</span>
-                <span>PostgreSQL</span>
-              </div>
-              <p class="project-note">Repositório privado • Projeto em desenvolvimento</p>
+        <div class="projects-layout">
+          <article class="project project-featured">
+            <div class="project-topline">
+              <span class="project-index">Projeto 01</span>
+              <span class="project-status">Em desenvolvimento</span>
+            </div>
+
+            <div class="project-mark navora-mark">N</div>
+            <p class="project-type">Mobile • Web • Backend</p>
+            <h3>Navora</h3>
+            <p class="project-description">
+              Sistema de navegação hospitalar inteligente criado para apoiar pacientes e visitantes
+              na localização e deslocamento dentro de ambientes hospitalares. O projeto reúne app mobile,
+              painel web administrativo, backend e estrutura de banco de dados.
+            </p>
+
+            <div class="tech-list">
+              <span>React Native</span>
+              <span>Expo</span>
+              <span>NestJS</span>
+              <span>TypeScript</span>
+              <span>Prisma</span>
+              <span>PostgreSQL</span>
+            </div>
+
+            <div class="project-footer">
+              <span>Projeto acadêmico e autoral</span>
+              <span>Repositório privado</span>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-number">02</div>
-            <div class="project-content">
-              <span class="project-label">Aplicação Web</span>
-              <h3>Accompets</h3>
-              <p>
-                Plataforma voltada ao cuidado de animais de estimação, com recursos para cadastro
-                de pets, adoção, prontuário, medicamentos, nutrição, clínicas, comunidade,
-                emergência, planos, recompensas e outras funcionalidades de acompanhamento.
-              </p>
-              <div class="tags">
-                <span>Next.js</span>
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Tailwind CSS</span>
-                <span>Radix UI</span>
-              </div>
-              <a class="project-link" href="https://github.com/ThauaneVargas/accompets" target="_blank" rel="noreferrer">Ver no GitHub ↗</a>
+          <article class="project project-secondary">
+            <div class="project-topline">
+              <span class="project-index">Projeto 02</span>
+              <a href="https://github.com/ThauaneVargas/accompets" target="_blank" rel="noreferrer" class="repo-link">
+                GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+              </a>
+            </div>
+
+            <div class="project-mark accompets-mark">A</div>
+            <p class="project-type">Aplicação Web</p>
+            <h3>Accompets</h3>
+            <p class="project-description">
+              Plataforma para cuidado de animais de estimação com funcionalidades de cadastro de pets,
+              adoção, prontuário, medicamentos, nutrição, clínicas, comunidade, emergência, planos e recompensas.
+            </p>
+
+            <div class="tech-list">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Tailwind CSS</span>
+              <span>Radix UI</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="habilidades">
-      <div class="container skills-layout">
-        <div>
-          <span class="section-kicker">Competências</span>
-          <h2>Conhecimentos</h2>
+    <section class="section skills-section" id="competencias">
+      <div class="shell skills-grid">
+        <div class="section-heading">
+          <p class="overline">04 / Competências</p>
+          <h2>Conhecimentos<br />em construção.</h2>
+          <p class="skills-note">
+            Tecnologias utilizadas em estudos e projetos práticos, com aprendizado contínuo.
+          </p>
         </div>
 
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Desenvolvimento</h3>
-            <p>HTML, CSS, JavaScript, TypeScript, React, Next.js, React Native e Expo.</p>
+        <div class="skill-columns">
+          <div class="skill-column">
+            <p class="skill-number">01</p>
+            <h3>Front-end &amp; Mobile</h3>
+            <ul>
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>React Native</li>
+              <li>Expo</li>
+            </ul>
           </div>
-          <div class="skill-group">
+
+          <div class="skill-column">
+            <p class="skill-number">02</p>
             <h3>Backend &amp; Dados</h3>
-            <p>NestJS, APIs REST, Prisma, PostgreSQL e fundamentos de banco de dados.</p>
+            <ul>
+              <li>NestJS</li>
+              <li>APIs REST</li>
+              <li>Prisma ORM</li>
+              <li>PostgreSQL</li>
+              <li>Modelagem de dados</li>
+            </ul>
           </div>
-          <div class="skill-group">
+
+          <div class="skill-column">
+            <p class="skill-number">03</p>
             <h3>Ferramentas</h3>
-            <p>Git, GitHub, Docker, Vercel, VS Code e ferramentas de desenvolvimento web.</p>
-          </div>
-          <div class="skill-group">
-            <h3>Administrativo</h3>
-            <p>Atendimento ao público, caixa, faturamento, estoque, marcação, laudos e organização de documentos.</p>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>Docker</li>
+              <li>Vercel</li>
+              <li>VS Code</li>
+              <li>Ambientes de desenvolvimento</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="formacao">
-      <div class="container two-column">
+    <section class="section education-section" id="formacao">
+      <div class="shell education-grid">
         <div>
-          <span class="section-kicker">Educação</span>
-          <h2>Formação</h2>
+          <p class="overline light-overline">05 / Formação</p>
+          <h2>Engenharia de<br />Software</h2>
         </div>
-        <div class="education-card">
-          <span class="education-status">Em andamento</span>
-          <h3>Engenharia de Software</h3>
-          <p>7º período</p>
-          <p class="muted">
-            Formação com foco em desenvolvimento de software, arquitetura de sistemas,
-            banco de dados, aplicações web e mobile e práticas de engenharia de software.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <section class="contact-section" id="contato">
-      <div class="container contact-grid">
-        <div>
-          <span class="section-kicker light">Contato</span>
-          <h2>Vamos conversar?</h2>
+        <div class="education-detail">
+          <div class="education-topline">
+            <span>Graduação em andamento</span>
+            <strong>7º período</strong>
+          </div>
           <p>
-            Tenho interesse em oportunidades que me permitam crescer na área de tecnologia,
-            continuar aprendendo e colocar meus conhecimentos em prática.
+            Formação voltada ao desenvolvimento de software, banco de dados, arquitetura de sistemas,
+            aplicações web e mobile, manutenção e evolução de software e práticas de engenharia.
           </p>
+          <div class="education-progress" aria-label="Curso em andamento">
+            <span></span>
+          </div>
         </div>
-        <div class="contact-actions">
-          <a href="mailto:Thauanevargas160@gmail.com">Thauanevargas160@gmail.com</a>
-          <a href="https://github.com/ThauaneVargas" target="_blank" rel="noreferrer">github.com/ThauaneVargas ↗</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="shell contact-inner">
+        <div>
+          <p class="overline">06 / Contato</p>
+          <h2>Pronta para o<br /><span>próximo desafio.</span></h2>
+        </div>
+
+        <div class="contact-card">
+          <p>
+            Busco oportunidades para continuar desenvolvendo minha carreira em tecnologia,
+            aprendendo com projetos reais e contribuindo com organização, responsabilidade e dedicação.
+          </p>
+
+          <a href="mailto:Thauanevargas160@gmail.com" class="contact-line">
+            <span>E-mail</span>
+            <strong>Thauanevargas160@gmail.com</strong>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+
+          <a href="https://github.com/ThauaneVargas" target="_blank" rel="noreferrer" class="contact-line">
+            <span>GitHub</span>
+            <strong>github.com/ThauaneVargas</strong>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container footer-wrap">
-      <span>Thauane Soares Vargas</span>
-      <span>Currículo profissional</span>
+    <div class="shell footer-inner">
+      <p>Thauane Soares Vargas</p>
+      <p>Currículo • 2026</p>
     </div>
   </footer>
 </body>
